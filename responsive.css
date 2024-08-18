@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: large;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.head{
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: -10px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo h1 {
+    margin: 0;
+}
+.navbar .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-list li {
+    margin-left: 20px;
+}
+
+.navbar .nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .nav-list a:hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.shop-now-button {
+    display: inline-block;
+    background-color: #ff4081;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.shop-now-button:hover {
+    background-color: #e33371;
+    transform: scale(1.05);
+}
+.home {
+    background: url('https://images.bestsellerclothing.in/live/image/catalog/brandstore/bestseller/banners/ol_denim_web_14082024.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+.about p{
+    text-align: center;
+    color: #aa496b;
+}
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.shop{
+    background: url('https://i.pinimg.com/736x/76/ad/8a/76ad8ad7169e8227217c2d838dac5ba9.jpg') no-repeat center center/cover;
+}
+.product {
+    display: inline-block;
+    width: 30%;
+    margin: 1rem;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.sale {
+    background-color: #f9f9f9;
+    padding: 2rem 1rem;
+}
+
+.sale h2 {
+    margin: 0 0 1rem;
+    font-size: 2.5rem;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.sale-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sale-item {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.sale-item img {
+    width: 100%;
+    height: 250px;
+}
+
+.sale-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col{
+    text-align: center;
+    margin: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .row{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .col{
+        margin: 0 20px;
+    }
+}
+@media (min-width: 768px) {
+    .home-content {
+        background-attachment: scroll;
+    }
+}
